@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:layout_margin="0dp">
+
+    <fragment
+        android:id="@+id/frag_text"
+        android:name="com.example.exercicio08.MenuFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        tools:layout="@layout/fragment_menu"/>
+
+    <fragment
+        android:id="@+id/frag_result"
+        android:name="com.example.exercicio08.BoxFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_marginLeft="10dp"
+        tools:layout="@layout/fragment_box" />
+
+
+</LinearLayout>
